@@ -101,4 +101,44 @@ margin-top: 50px;
 .visionMission p{
   padding: 5px 2px 2px 2px;
 }
-  
+ 
+/*-------------------- gallery-====================================----------------------*/
+#gallery{
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+#gallery .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#gallery .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  /* height: 260px; */
+}
+#gallery .member .pic img {
+  max-width: 100%;
+}
+#gallery .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#gallery .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+#gallery .member .social {
+  margin-top: 15px;
+}
+#gallery .member .social a {
+  color: #b3b3b3;
+}
+#gallery .member .social a:hover {
+  color: #f0860e;
+}
+#gallery .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+/* ===============================detail.html========================= */
