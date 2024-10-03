@@ -53,7 +53,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style1.css">
-  <!-- <link rel="stylesheet" href="./assets/css/style2.css"> -->
+  <link rel="stylesheet" href="./assets/css/style2.css">
 
   <!-- =======================================================
   * Template Name: Imperial - v5.7.0
@@ -111,7 +111,7 @@
 
           <li><a class="nav-link scrollto" href="#testimonials">Dregers</a></li>
 
-          <li><a class="nav-link scrollto" href="#team">Equipment</a></li>
+          <li><a class="nav-link scrollto" href="#equipment">Equipment</a></li>
 
           <li><a class="nav-link scrollto" href="#team">Blog</a></li>
 
@@ -298,128 +298,259 @@
         </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Team Section  ----Equipment  ======= -->
-    <section id="team">
+    <!--====================== equipment =======================-->
+    <section id="equipment">
       <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h3 class="section-title">Equipment</h3>
-          <div class="section-title-divider"></div>
-        </div>
         <div class="row">
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-              <div class="social">
-                <!-- <a href=""><i class="bi bi-github"></i></a> -->
-                <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
-              </div>
-              <div class="member-info-content">
-                <h4>lorem 1</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-
-              <div class="member-info-content">
-                <h4>lorem 2</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+          <div class="col-md-12">
+            <h3 class="section-title">Equipment</h3>
+            <div class="section-title-divider"></div>
+            <div class="row" id="equipmentButton">
+              <div class="col-md-12">
+                <button onclick="filterSelection('all')">All</button>
+                <button onclick="filterSelection('bulldozer')">Bulldozer</button>
+                <button onclick="filterSelection('dumper')">Dumper</button>
+                <button onclick="filterSelection('wheelLoader')">Wheel Loader</button>
+                <button onclick="filterSelection('excavator')">Excavator</button>
+                <button onclick="filterSelection('crane')">Crane</button>
+                <button onclick="filterSelection('machine')">Machine</button>
               </div>
             </div>
-          </div>
+            <!-- ============equipment type============= -->
+            <div class="row" id="equipmentType">
+              <div class="col-md-4 box bulldozer1">
+                <img src="./assets/img/Bulldozer.jfif" alt="Bulldozer Image">
+                <h4>Bulldozer</h4>
+                <span>This type of equipment is used in a wide range from land reclamation works to earthmoving
+                  works.</span>
+              </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
+              <div class="col-md-4 box dumper1">
+                <img src="./assets/img/Dumper.jfif" alt="Dumper Image">
+                <h4>Dumper</h4>
+                <span>We use these machines to transport bulk material, gravel, sand or soil. Our machine park contains
+                  more than 70 dumpers.</span>
+              </div>
 
-              <div class="member-info-content">
-                <h4>lorem 3</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+              <div class="col-md-4 box wheelLoader1">
+                <img src="./assets/img/Wheel Loader.jpg" alt="Wheel Loader Image">
+                <h4>Wheel Loader</h4>
+                <span>Wheel loaders are indispensable for our operations. We use them to move materials such as soil and
+                  sand.</span>
+              </div>
+
+              <div class="col-md-4 box excavator1">
+                <img src="./assets/img/Excavator.jfif" alt="Excavator Image">
+                <h4>Excavator</h4>
+                <span>An excavator is a heavy construction machine primarily used for digging, earthmoving, and material
+                  handling.</span>
+              </div>
+
+              <div class="col-md-4 box crane1">
+                <img src="./assets/img/Crane.jpg" alt="Crane Image">
+                <h4>Crane</h4>
+                <span>A crane is a type of heavy machinery used to lift, lower, and move heavy loads
+                  horizontally.</span>
+              </div>
+
+              <div class="col-md-4 box machine1">
+                <img src="./assets/img/Machine.jfif" alt="Machine Image">
+                <h4>Machine</h4>
+                <span>machine can be used to carry out various techniques, such as Cutter Soil Mixing, drilling piles,
+                  placing sheet piles, slurry walls and anchors formed in the ground.</span>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-
-              <div class="member-info-content">
-                <h4>lorem 4</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+            <!--============ hide deatil ===============-->
+            <div class="row" id="equipmentDetail">
+              <div class=" col-md-12 box bulldozer">
+                <div class="row">
+                  <div class="col-md-5 ">
+                    <img src="./assets/img/Bulldozer.jfif" alt="Bulldozer Image">
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-6">
+                    <h3>Bulldozer</h3>
+                    <br>
+                    <p> A bulldozer is a powerful tracked or wheeled construction machine used for pushing large
+                      quantities of soil, sand, rubble, or other materials. It has a large, flat blade at the front,
+                      which can be adjusted to control the depth and angle of the cut. Bulldozers are commonly used in
+                      construction, mining, agriculture, and land clearing.
+                      <!-- <ul> -->
+                      <br>
+                      <span> Key features of a bulldozer include:</span>
+                      <ul>
+                      <li>
+                        Blade: The large metal plate at the front that pushes material. Blades can come in different
+                        types—straight (S-blade), universal (U-blade), and others—for different purposes. </li>
+                      <li>
+                        Tracks/Wheels: Most bulldozers are mounted on tracks, providing them with better traction on
+                        soft
+                        or uneven terrain. There are also wheeled versions, which offer greater speed but less traction.
+                      </li>
+                      <li>
+                        Ripper: Some bulldozers are equipped with a ripper at the rear, a claw-like device used to break
+                        up hard ground or rocks.</li>
+                      </ul>
+                      <!-- </ul> -->
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-
-              <div class="member-info-content">
-                <h4>lorem 5</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+              <div class=" col-md-12 box dumper">
+                <div class="row">
+                  <div class="col-md-5 ">
+                    <img src="./assets/img/Dumper.jfif" alt="Dumper Image">
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-6">
+                    <h3>Dumper</h3>
+                    <br>
+                    <p> A dumper is a type of heavy-duty vehicle used to transport loose materials, such as sand,
+                      gravel, demolition waste, or soil, typically on construction sites or in mining operations. Unlike
+                      dump trucks, dumpers are more compact and are designed primarily for off-road use. They are highly
+                      versatile and are used for transporting materials over short distances.
+                      <br>
+                      <span>There are various types of dumpers, including:</span>
+                      <ul>
+                      <li>
+                        Site Dumpers: Common on construction sites, these are small and agile with a front-facing skip
+                        for
+                        easy unloading.</li>
+                      <li>
+                        Tracked Dumpers: Equipped with rubber tracks instead of wheels, making them ideal for rough or
+                        uneven terrains.</li>
+                      <li>
+                        Articulated Dump Trucks: Larger and used in mining or large earth-moving projects, these have a
+                        joint between the cab and the dump bed, providing more flexibility on challenging terrain.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-
-              <div class="member-info-content">
-                <h4>lorem 6</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+              <div class=" col-md-12 box wheelLoader">
+                <div class="row">
+                  <div class="col-md-5  ">
+                    <img src="./assets/img/Wheel Loader.jpg" alt="Wheel Loader Image">
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-5">
+                    <h3>Wheel Loader</h3>
+                    <br>
+                    <p> A wheel loader is a type of heavy construction equipment equipped with large wheels and a
+                      front-mounted bucket, used primarily for scooping, transporting, and loading loose materials such
+                      as soil, gravel, sand, and debris. The loader’s versatility and mobility make it an essential
+                      machine on construction, mining, and agricultural sites.
+                      <span>Wheel loaders come in a variety of sizes:</span>
+                      <ul>
+                      <li> Compact Wheel Loaders: Smaller models used for light construction, landscaping, or
+                        agriculture.</li>
+                      <li>Mid-Sized Wheel Loaders: Versatile and used for general construction tasks, offering a balance
+                        between power and maneuverability. </li>
+                      <li>Large Wheel Loaders: Heavy-duty models used in mining or quarry operations, capable of moving
+                        large amounts of material. </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-
-              <div class="member-info-content">
-                <h4>lorem 7</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+              <div class=" col-md-12 box excavator">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./assets/img/Excavator.jfif" alt="Excavator Image">
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-5">
+                    <h3>Excavator</h3>
+                    <br>
+                    <p> An excavator is a heavy construction machine primarily used for digging, earthmoving, and
+                      material handling. It consists of a rotating platform, a large arm (which is made up of a boom, a
+                      stick, and an attachment like a bucket), and tracks or wheels for movement.
+                      <span>Key features of an excavator include: </span>
+                     <ul>       
+                      <li> Boom and Arm: The arm, made up of the boom and stick, allows the excavator to reach and
+                        dig at different angles.</li>
+                      <li> Attachments: While the bucket is the most common attachment, excavators can also use
+                        augers, hydraulic hammers, grapples, and shears, making them versatile for a range of tasks.
+                      </li>
+                      <li>Cab Rotation: The cab can rotate 360 degrees, providing excellent maneuverability without
+                        having to reposition the machine.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="./assets/img/dredgers/DREDGING.png" class="img-fluid n-img b" alt="">
-
-              <div class="member-info-content">
-                <h4>lorem 8</h4>
-                <span>Lorem ipsum dolor sit amet.</span>
-                <br>
-                <span>Load More...</span>
+              <div class=" col-md-12 box crane">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./assets/img/Crane.jpg" alt="Crane Image">
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-6">
+                    <h3>Crane</h3>
+                    <br>
+                    <p>
+                      A crane is a type of heavy machinery used to lift, lower, and move heavy loads horizontally. It
+                      consists of a boom (or jib), a counterweight, and various hoisting mechanisms like cables,
+                      pulleys, and winches. <span>Cranes come in several different types, including:</span>
+                    <ul>
+                      <li>Tower Cranes:-
+                        Often used in the construction of tall buildings, they are fixed to the ground and provide a
+                        combination of height and lifting capacity.</li>
+                      <li> Mobile Cranes:-
+                        Mounted on trucks or other vehicles, mobile cranes are highly versatile and used for jobs that
+                        require flexibility.</li>
+                      <li>Crawler Cranes:-
+                        Equipped with tracks instead of wheels, crawler cranes can move heavy loads across challenging
+                        terrains and are typically used on large construction sites.</li>
+                      <li>Overhead Cranes:-
+                        Also known as bridge cranes, these are commonly found in factories and warehouses for moving
+                        heavy
+                        materials within a confined space.</li>
+                      <li> Floating Cranes:-
+                        Used in port or offshore construction, they are mounted on vessels to assist with loading and
+                        unloading ships or building structures at sea.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
               </div>
+
+              <div class=" col-md-12 box machine">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./assets/img/Machine.jfif" alt="Machine Image">
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-5">
+                    <h3>Machine</h3>
+                    <br>
+                    <p>telescopic leader, anchor drilling machines and slurry wall cranes to cable cranes equipped with
+                      a swinging leader, vibratory hammers and piling hammers. Each machine can be used to carry out
+                      various techniques, such as Cutter Soil Mixing, drilling piles, placing sheet piles, slurry walls
+                      and anchors formed in the ground.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Team Section -->
+    </section>
+
+
+    <!-- ==============Equipment end============= -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact">
       <div class="container" data-aos="fade-up">
+
         <div class="row">
           <div class="col-md-12">
             <h3 class="section-title">Contact Us</h3>
@@ -548,6 +679,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./assets/js/index.js"></script>
 
 </body>
 
