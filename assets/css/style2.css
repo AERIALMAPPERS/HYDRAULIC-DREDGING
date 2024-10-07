@@ -1,13 +1,27 @@
 /* dredgers type Section--------------------------------*/
+
+canvas {
+  max-width: 400px;
+  max-height: 400px;
+}
 #dredger2, #dredger4, #dredger6, #dredger8 {
   /* background: #fffaed; */
   padding: 40px 0 80px 0;
+  
+}
+#dredger2 div, #dredger4 div, #dredger6 div, #dredger8 div{
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+#dredgers h6{
+  text-decoration: underline;
+  font-weight: bold;
 }
  h5{
   color: #f0860e;
 }
 #dredger2, #dredger4, #dredger6, #dredger8  .info {
   color: #333333;
+
 }
 #dredger1, #dredger3, #dredger5, #dredger7 {
   background: #f7f7f7;

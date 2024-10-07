@@ -107,13 +107,13 @@
             </ul>
           </li>
 
-          <li><a class="nav-link scrollto " href="#portfolio">Our Service</a></li>
+          <li><a class="nav-link scrollto " href="#service">Our Service</a></li>
 
-          <li><a class="nav-link scrollto" href="#testimonials">Dregers</a></li>
+          <li><a class="nav-link scrollto" href="#indexDredgers">Dregers</a></li>
 
           <li><a class="nav-link scrollto" href="#equipment">Equipment</a></li>
 
-          <li><a class="nav-link scrollto" href="#team">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
 
           <li class="dropdown">
             <a class="nav-link scrollto" href="index.html#contact">Contact <i class="fa fa-angle-down"></i></a>
@@ -147,9 +147,9 @@
               Dredging Involve Project Planning, Design ,Operation Involves The Removal Of Sediments That Have
               Accumulated Since The Previous Dredging Operation.
             </p>
-            <div class="row">
+            <div class="row" style="align-items: center; justify-content: center;">
               <div class="col-md-4 ">
-                <img src="./assets/img/Construction Machinary.png" alt="" style="margin-left: 400px;" height="auto">
+                <img src="./assets/img/Construction Machinary.png" alt="" height="auto">
                 <!-- <img src="./assets/img/Construction Machinary.png" alt="" style="display: flex; justify-content: center; align-items: center;">  -->
               </div>
             </div>
@@ -162,42 +162,73 @@
     <section id="subscribe">`
 
       <div class="container" data-aos="fade-up">
-        <img src="assets/img/dregers.jpeg" alt="">
-        <div class="row">
-          <div class="col-md-8">
-            <!-- <div class="quote"> -->
-            <b><img src="assets/img/dregers.jpeg" alt="" style="margin-left: 100px;"></b>
-            <h3 class="subscribe-title">Knowledge is power,</h3>
-            <h3 class="subscribe-title">Information is liberating,</h3>
-            <h3 class="subscribe-title">Education is the premise of progress, in every society.</h3>
 
-            <small> <b> <img src="assets/img/dregers.jpeg" alt="" style="float: right;margin-right:0px;"> </b></small>
-            <!-- </div> -->
-          </div>
-          <div class="col-md-4 subscribe-btn-container">
-            <a class="subscribe-btn" href="#">Home</a>
-          </div>>
-        </div>
+        <img src="assets/img/dregers.jpeg" alt="">
+        <!-- <div class="row" style="align-items: center; justify-content: center;"> -->
+
       </div>
     </section>
     <!-- End Subscrbe Section-->
 
-    <!-- ======= Event Section ======= -->
-    <section id="portfolio">
+    <!-- ======= Service Section ======= -->
+    <section id="service">
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-md-12">
             <h3 class="section-title">Our Service</h3>
             <div class="section-title-divider"></div>
             <p class="section-description">Check out our latest Project</p>
+            <div class="row justify-content-center">
+              <div class="service-container">
+                <div class="service active" id="service1">
+                  <p>
+                    Just wanted to say thank you again, your 300 SL Dragon is a very high-quality machine!
+                    Many dredges, especially "old swinging ladder dredges," pump water while the operator is setting
+                    up for the next cut, but not this one. We were able to turn the pump off, with the flick of a
+                    switch, set up, then send the treatment plant heavy solids! We had zero downtime due to the dredge.
+                  </p>
+                  <div class="author">JAMES E. RILEY</div>
+                  <div class="company">Riley Dredge Consulting</div>
+                </div>
+
+                <div class="service" id="service2">
+                  <p>
+                    The 300 SL Dragon is extremely reliable and easy to use. Our operators were able to quickly
+                    understand the controls and make the most out of every dredging operation. Productivity has
+                    definitely
+                    improved since we started using this machine.
+                  </p>
+                  <div class="author">SUSAN M. CLARK</div>
+                  <div class="company">Clark Dredging Solutions</div>
+                </div>
+
+                <div class="service" id="service3">
+                  <h2>Check out our latest Project</h2>
+                  <p>
+                    I highly recommend the 300 SL Dragon for any dredging project. The machine's quality and efficiency
+                    are unmatched, and it has saved us both time and money. The customer support team has also been
+                    incredibly helpful throughout our purchase and setup process.
+                  </p>
+                  <div class="author">ROBERT T. SMITH</div>
+                  <div class="company">Smith Marine Works</div>
+                </div>
+              </div>
+
+              <!-- Dots for navigation between services -->
+              <div class="dots">
+                <span class="dot active" onclick="showService(1)" aria-label="Show Service 1"></span>
+                <span class="dot" onclick="showService(2)" aria-label="Show Service 2"></span>
+                <span class="dot" onclick="showService(3)" aria-label="Show Service 3"></span>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!----============- End Service Section ============-->
 
     <!-- ======= Dredgers Section ======= -->
-    <section id="testimonials">
+    <section id="indexDredgers">
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-md-12">
@@ -205,7 +236,6 @@
             <div class="section-title-divider"></div>
             <p class="section-description"> Dredging Is The Removal Of Bottom Sediments From Stream, Rivers, lakes,
               costal Water And Oceans.
-
               The Resulting Dredged Material Is Transported By Ship, Barge Or Pipeline To A Designated Disposal Site On
               Land Or In The Water</p>
 
@@ -291,9 +321,7 @@
                 <!-- <span>Load More...</span> -->
                 <br><br>
               </div>
-
             </div>
-
           </div>
         </div>
     </section><!-- End Testimonials Section -->
@@ -306,7 +334,7 @@
             <h3 class="section-title">Equipment</h3>
             <div class="section-title-divider"></div>
             <div class="row" id="equipmentButton">
-              <div class="col-md-12">
+              <div class="col-md-12 button">
                 <button onclick="filterSelection('all')">All</button>
                 <button onclick="filterSelection('bulldozer')">Bulldozer</button>
                 <button onclick="filterSelection('dumper')">Dumper</button>
@@ -379,7 +407,7 @@
                       <!-- <ul> -->
                       <br>
                       <span> Key features of a bulldozer include:</span>
-                      <ul>
+                    <ul>
                       <li>
                         Blade: The large metal plate at the front that pushes material. Blades can come in different
                         types—straight (S-blade), universal (U-blade), and others—for different purposes. </li>
@@ -391,8 +419,8 @@
                       <li>
                         Ripper: Some bulldozers are equipped with a ripper at the rear, a claw-like device used to break
                         up hard ground or rocks.</li>
-                      </ul>
-                      <!-- </ul> -->
+                    </ul>
+                    <!-- </ul> -->
                     </p>
                   </div>
                 </div>
@@ -413,7 +441,7 @@
                       versatile and are used for transporting materials over short distances.
                       <br>
                       <span>There are various types of dumpers, including:</span>
-                      <ul>
+                    <ul>
                       <li>
                         Site Dumpers: Common on construction sites, these are small and agile with a front-facing skip
                         for
@@ -424,7 +452,7 @@
                       <li>
                         Articulated Dump Trucks: Larger and used in mining or large earth-moving projects, these have a
                         joint between the cab and the dump bed, providing more flexibility on challenging terrain.</li>
-                      </ul>
+                    </ul>
                     </p>
                   </div>
                 </div>
@@ -444,14 +472,14 @@
                       as soil, gravel, sand, and debris. The loader’s versatility and mobility make it an essential
                       machine on construction, mining, and agricultural sites.
                       <span>Wheel loaders come in a variety of sizes:</span>
-                      <ul>
+                    <ul>
                       <li> Compact Wheel Loaders: Smaller models used for light construction, landscaping, or
                         agriculture.</li>
                       <li>Mid-Sized Wheel Loaders: Versatile and used for general construction tasks, offering a balance
                         between power and maneuverability. </li>
                       <li>Large Wheel Loaders: Heavy-duty models used in mining or quarry operations, capable of moving
                         large amounts of material. </li>
-                      </ul>
+                    </ul>
                     </p>
                   </div>
                 </div>
@@ -470,7 +498,7 @@
                       material handling. It consists of a rotating platform, a large arm (which is made up of a boom, a
                       stick, and an attachment like a bucket), and tracks or wheels for movement.
                       <span>Key features of an excavator include: </span>
-                     <ul>       
+                    <ul>
                       <li> Boom and Arm: The arm, made up of the boom and stick, allows the excavator to reach and
                         dig at different angles.</li>
                       <li> Attachments: While the bucket is the most common attachment, excavators can also use
@@ -478,7 +506,7 @@
                       </li>
                       <li>Cab Rotation: The cab can rotate 360 degrees, providing excellent maneuverability without
                         having to reposition the machine.</li>
-                      </ul>
+                    </ul>
                     </p>
                   </div>
                 </div>
@@ -537,7 +565,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -616,17 +643,16 @@
           </div>
         </div>
 
-        <section id="subscribe">
+        <section id="blogQuote">
           <div class="container" data-aos="fade-up">
-
             <!-- <img src="assets/img/dregers.jpeg" alt=""> -->
             <div class="row">
               <div class="col-md-8">
                 <!-- <div class="quote"> -->
                 <b><img src="#imgggg path" alt="" style="margin-left: 100px;"></b>
-                <h3 class="subscribe-title"> WHAT WE OFFER IS………,</h3>
-                <h3 class="subscribe-title"> MORE PRODUCTION ,</h3>
-                <h3 class="subscribe-title">WITH LESS TIME.</h3>
+                <h3 class="blogQuote-title"> WHAT WE OFFER IS………,</h3>
+                <h3 class="blogQuote-title"> MORE PRODUCTION ,</h3>
+                <h3 class="blogQuote-title">WITH LESS TIME.</h3>
                 <small> <b> <img src="#imgggg path" alt="" style="float: right;margin-right:0px;"> </b></small>
                 <!-- </div> -->
               </div>
@@ -677,9 +703,19 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- service section js -->
+  <!-- Include jQuery and Bootstrap JS (Optional, if Bootstrap JS components are used) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-LtrjvnR4geLepbGNSIlbz50d8u5s86DXK6d3Xx50aGkUOWg0kKn3E4jqXl78FhNk"
+    crossorigin="anonymous"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/service.js"></script>
 
 </body>
 

@@ -1,3 +1,5 @@
+//index-equipment details hide detail and show detail
+
 document.addEventListener('DOMContentLoaded', () => {
   filterSelection('all'); // Show all items by default
 });
