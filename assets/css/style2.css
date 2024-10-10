@@ -156,3 +156,76 @@ margin-top: 50px;
   margin: 0 2px;
 }
 /* ===============================detail.html========================= */
+/* =======================Team Section========--------*/
+#team {
+  /* background: #fff; */
+  background: #f7f7f7;
+  padding: 80px 0 60px 0;
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  /* height: 260px; */
+}
+#team .member .pic img {
+  max-width: 100%;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  color: #b3b3b3;
+}
+#team .member .social a:hover {
+  color: #f0860e;
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+/* =======================Team Section========--------*/
+
+/* =======================values Section========--------*/
+#values{
+  background: #f7f7f7;
+  padding: 80px 0 60px 0;
+}
+.valueBox{
+  background-color: #fff;
+}
+#values img{
+  max-width: 100%;
+}
+#values .col-md-3{
+display: block;
+align-items: center;
+justify-content: center;
+padding: 30px;
+text-align: center;
+box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+}
+
+ span{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+#values p{
+  text-align: center;
+  /* text-justify: initial; */
+}
+/* =======================values Section========--------*/
